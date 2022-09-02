@@ -8,7 +8,7 @@ export default defineConfig({
     host: "localhost",
     port: 8888,
     open: true,
-    https: false,
+    https: true,
     proxy: {},
   },
   plugins: [vue()],

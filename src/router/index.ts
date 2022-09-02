@@ -5,30 +5,30 @@ import NProgress from "nprogress";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    redirect: "/static/home",
+    redirect: "/home",
   },
   {
-    path: "/static/404",
+    path: "/404",
     name: "ErrorPage",
     component: () => import("~/views/errorPages/index.vue"),
   },
   {
-    path: "/static/home",
+    path: "/home",
     name: "Home",
     component: () => import("~/views/home/index.vue"),
   },
   {
-    path: "/static/hero",
+    path: "/hero",
     name: "Hero",
     component: () => import("~/views/home/components/Hero.vue"),
   },
   {
-    path: "/static/detail",
+    path: "/detail",
     name: "detail",
     component: () => import("~/views/home/components/StoreTest.vue"),
   },
   {
-    path: "/static/:pathMatch(.*)*",
+    path: "/:pathMatch(.*)*",
     redirect: "/404",
   },
 ];
