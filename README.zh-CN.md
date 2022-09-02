@@ -1,10 +1,9 @@
 <div align='center'>
-<h1>Vite-Boot </h1>
-<img src='README.assets/vite-vue-tailwind.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+<img src='README.assets/vite-vue-tailwind.png' alt='Vite' width='600'/>
 </div>
 
 <p align='center'>
-使用Vite-Boot快速地创建 Web 应用
+古籍药典资源
 </p>
 
 ## 特性
@@ -39,7 +38,6 @@
 ## 项目结构
 
 ```
-# vite-boot
 ├── LICENSE
 ├── README.assets
 │   └── vite-vue-tailwind.png
@@ -49,51 +47,36 @@
 ├── node_modules
 ├── package.json
 ├── pnpm-lock.yaml
-├── postcss.config.js        # tailwind 相关配置
+├── postcss.config.js        # tailwind configuration
 ├── public
 │   └── favicon.ico
 ├── src
-│   ├── App.vue              # 入口页面
-│   ├── api                  # api 接口
-│   ├── assets               # 静态资源
+│   ├── App.vue
+│   ├── assets               # static resource
 │   │   └── logo.png
-│   ├── components           # 全局组件
-│   │   └── Navbar.vue       # 顶部导航栏组件
+│   ├── components           # global component
+│   │   └── Navbar.vue       # Navbar component
 │   ├── env.d.ts
-│   ├── main.ts              # 入口文件
+│   ├── main.ts
 │   ├── router               # Vue router
 │   │   └── index.ts
 │   ├── settings.ts          # global configuration
-│   ├── store                # Pinia 状态管理
+│   ├── store                # Pinia store
 │   │   ├── counter.ts
 │   │   └── index.ts
-│   ├── styles               # 全局样式
+│   ├── styles               # global style
 │   │   ├── main.scss
-│   │   ├── nprogress.scss   # nprogress 样式（顶部加载样式）
-│   │   ├── tailwind.css     # tailwind 样式
-│   │   └── variables.scss   # SCSS全局变量
-│   ├── utils                # 项目公共方法
-│   │   └── darkMode.ts
-│   └── views                # 所有页面
-│       └── Index.vue        # APP首页
-├── tailwind.config.js       # tailwind 配置文件
-├── tsconfig.json            # TS 编译配置
-└── vite.config.ts           # Vite 配置文件
+│   │   ├── nprogress.scss   # nprogress style
+│   │   ├── tailwind.css
+│   │   └── variables.scss
+│   ├── utils                # global public method
+│   │   └── logger.ts        # log print
+│   └── views                # all pages
+│       └── Index.vue
+├── tailwind.config.js       # tailwind configuration
+├── tsconfig.json            # TS compilation configuration
+└── vite.config.ts           # Vite configuration
 
-```
-
-## 快来试试吧！！
-
-### GitHub 模板
-
-[使用这个模板创建仓库](https://github.com/kirklin/vite-boot/generate).
-
-### 克隆到本地
-
-```bash
-npx degit kirklin/vite-boot my-vite-app
-cd my-vite-app
-pnpm i
 ```
 
 ## 使用

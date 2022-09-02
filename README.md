@@ -1,10 +1,9 @@
 <div align='center'>
-<h1>Vite-Boot </h1>
-<img src='README.assets/vite-vue-tailwind.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+<img src='README.assets/vite-vue-tailwind.png' alt='Vite' width='600'/>
 </div>
 
 <p align='center'>
-Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
+Pharmacopoeia resources of ancient books </b><sup><em>(medicine)</em></sup><br>
 </p>
 
 <div align='center'>
@@ -20,7 +19,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - Rapidly build modern websites without ever leaving your HTML.
 - 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/) - The Vue Store that you will enjoy using
-- 🌼 [Daisy](https://daisyui.com/) - The free and open-source Tailwind CSS component library
+- 🌼 [DaisyUI](https://daisyui.com/) - The free and open-source Tailwind CSS component library
 
 ### First-party plugins needed for Tailwind UI:
 
@@ -43,7 +42,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 ## directory
 
 ```
-# vite-boot
 ├── LICENSE
 ├── README.assets
 │   └── vite-vue-tailwind.png
@@ -58,7 +56,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   └── favicon.ico
 ├── src
 │   ├── App.vue
-│   ├── api                  # api interface
 │   ├── assets               # static resource
 │   │   └── logo.png
 │   ├── components           # global component
@@ -77,27 +74,13 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   │   ├── tailwind.css
 │   │   └── variables.scss
 │   ├── utils                # global public method
-│   │   └── darkMode.ts
+│   │   └── logger.ts        # log print
 │   └── views                # all pages
 │       └── Index.vue
 ├── tailwind.config.js       # tailwind configuration
 ├── tsconfig.json            # TS compilation configuration
 └── vite.config.ts           # Vite configuration
 
-```
-
-## Try it now!
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/kirklin/vite-boot/generate).
-
-### Clone to local
-
-```bash
-npx degit kirklin/vite-boot my-vite-app
-cd my-vite-app
-pnpm i
 ```
 
 ## Usage
