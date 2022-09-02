@@ -1,5 +1,5 @@
 import type { RouteRecordRaw } from "vue-router";
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter,  createWebHashHistory } from "vue-router";
 import NProgress from "nprogress";
 
 const routes: RouteRecordRaw[] = [
@@ -34,7 +34,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const index = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 index.beforeEach(() => {
