@@ -3,54 +3,40 @@ import ThemeChange from "./components/ThemeChange.vue";
 </script>
 
 <template>
+  <!-- sticky top-0  -->
   <div
-    class="sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
+    class="z-50 flex h-30 mb-2 w-full justify-center bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
   >
-    <nav class="navbar w-full">
+    <nav class="navbar w-full items-baseline">
       <div class="flex flex-1 md:gap-1 lg:gap-2">
         <router-link
           to="/"
           aria-current="page"
           aria-label="Homepage"
-          class="flex-0 btn btn-ghost px-2"
+          class="flex-0 btn btn-ghost px-2  h-[106px]"
         >
           <div
             class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
-            <img src="../../../assets/qz.jpg" alt="求真" class="h-[48px]">
+            <img src="../../../assets/qz.jpg" alt="求真" class="h-24">
             <!-- <span class="text-accent font-kai text-4xl">医药典籍<span class="lowercase"></span></span>
             <span class="text-base-content font-fang-song text-2xl leading-10 ml-1">资源库<span class="lowercase"></span></span> -->
-            <span class="text-accent font-fang-song text-3xl font-bold leading-[50px] ml-[-10px] mr-1">求真中医善本古籍异文数据库</span>
+            <span class="text-accent font-fang-song text-3xl font-bold leading-[100px] ml-[-20px] mr-2">求真中医善本古籍异文数据库</span>
           </div>
         </router-link>
       </div>
       <div class="flex-0">
-        <ThemeChange />
         <span
           class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
-          data-tip="GitHub"
+          data-tip="中医数据库"
         >
           <div class="flex-none items-center">
-            <a
-              aria-label="Github"
-              target="_blank"
-              href="https://github.com/TreeNewKing/gyy_code"
-              class="btn btn-ghost btn-square drawer-button normal-case"
-            >
-              <svg
-                width="20"
-                height="20"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                class="inline-block h-5 w-5 fill-current md:h-6 md:w-6"
-              >
-                <path
-                  d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z"
-                />
-              </svg>
-            </a>
+            <span class="font-kai text-base btn btn-ghost tracking-wider drawer-button normal-case">首页</span>
           </div>
         </span>
+        <span class="ml-2 mr-4">|</span>
+        <span class="font-kai text-base tracking-wide mr-4">数据库说明</span>
+        <ThemeChange />
       </div>
     </nav>
   </div>
