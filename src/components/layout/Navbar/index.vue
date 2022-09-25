@@ -17,8 +17,10 @@ import ThemeChange from "./components/ThemeChange.vue";
           <div
             class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
-            <span class="text-accent font-kai text-4xl">医药典籍<span class="lowercase"></span></span>
-            <span class="text-base-content font-fang-song text-2xl leading-10 ml-1">资源库<span class="lowercase"></span></span>
+            <img src="../../../assets/qz.jpg" alt="求真" class="h-[48px]">
+            <!-- <span class="text-accent font-kai text-4xl">医药典籍<span class="lowercase"></span></span>
+            <span class="text-base-content font-fang-song text-2xl leading-10 ml-1">资源库<span class="lowercase"></span></span> -->
+            <span class="text-accent font-fang-song text-3xl font-bold leading-[50px] ml-[-10px] mr-1">求真中医善本古籍异文数据库</span>
           </div>
         </router-link>
       </div>
