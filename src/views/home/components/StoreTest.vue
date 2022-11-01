@@ -30,7 +30,7 @@ const infoArr = [{
 </script>
 
 <template>
-  <div class="flex flex-wrap gap-20 mt-4 py-8 justify-center">
+  <div class="flex flex-wrap gap-20 mt-4 py-4 mx-auto justify-center max-w-[1520px] min-w-[1280px]">
     <Card v-for="(item, index) in infoArr" :key="index" :url="item.url" :title="item.title" :info="item.info"  />
 
     <div v-if="infoArr.length%3 !== 0">
